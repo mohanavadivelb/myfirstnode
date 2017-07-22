@@ -33,4 +33,4 @@ app.get('/',function (req, res){
 	
 });
 
-app.listen(7000);
+//app.listen(7000);
