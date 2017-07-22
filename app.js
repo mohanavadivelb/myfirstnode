@@ -33,4 +33,7 @@ app.get('/',function (req, res){
 	
 });
 
-app.listen(7000);
+var port = process.env.PORT || 3000;
+app.listen(port);
+
+console.log('node is running on port 7000...')
