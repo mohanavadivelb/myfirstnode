@@ -29,11 +29,12 @@ var express = require('express');
 var app = express();
 
 app.get('/',function (req, res){
-	res.json({message:'hurray from mohan express'});
+	res.writeHead(200, {'Content-Type': 'text/html'});
+    res.end('Hello World!');
 	
-});
+}); 
 
 var port = process.env.PORT || 3000;
 app.listen(port);
 
-console.log('node is running on port 7000...')
+console.log('node is running on port 3000...')
